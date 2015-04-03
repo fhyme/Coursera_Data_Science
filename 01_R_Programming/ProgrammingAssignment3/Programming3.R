@@ -1,0 +1,5 @@
+setwd("F:\\CS\\R\\R_Programming\\week4")
+ocm <- read.csv("./outcome-of-care-measures.csv", colClasses = "character")
+ocm[,11]<-as.numeric(ocm[,11])
+hist(ocm[,11])
+#hd <- read.csv("./hospital-data.csv")
